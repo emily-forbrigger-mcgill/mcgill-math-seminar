@@ -1,0 +1,430 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home | McGill Math Seminar">
+	<section class="hero">
+		<div class="hero-content">
+			<div class="badge">A Bi-Weekly Math Discussion</div>
+			<h1>Where deep curiosity meets <span class="whimsical-text">playful exploration.</span></h1>
+			<p class="hero-subtitle">
+				We bridge rigorous, research-level math concepts with wonder, curiosity, and absolute confusion. No rigid curricula, just pure discussion-based fun.
+			</p>
+			<div class="hero-actions">
+				<a href="#seminars" class="btn primary">See What's Coming Up</a>
+				<a href="#about" class="btn secondary">Our Concept</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<section id="seminars" class="section">
+			<div class="section-header">
+				<h2 class="section-title">The Fall Schedule</h2>
+				<p class="section-desc">Drop in whenever you like. Sessions are held (tentatively) Fridays in Burnside Hall GIC 512.</p>
+			</div>
+			
+			<div class="grid">
+				<div class="card event-card">
+					<div class="date-tag">Nov 06</div>
+					<h3>Introduction to Math Seminar</h3>
+					<span class="speaker-tag">with Emily Forbrigger</span>
+					<p class="card-text">Discover what math seminar is all about! Emily will give a sneak peak into what a speaker intro can look like, and then we'll have a rapid fire group discussion.</p>
+					<div class="location-footer">Burnside, GIC 512 &bull; 10-11 AM</div>
+				</div>
+
+				<div class="card event-card">
+					<div class="date-tag">Nov ??</div>
+					<h3>To Be Decided!</h3>
+					<span class="speaker-tag">with A. Speaker</span>
+					<p class="card-text">Who knows the wonders we'll discuss! Maybe you'll be the speaker...?</p>
+					<div class="location-footer">Burnside, GIC 512 &bull; 10-11 AM</div>
+				</div>
+
+				<div class="card event-card">
+					<div class="date-tag">Nov ??</div>
+					<h3>To Be Decided!</h3>
+					<span class="speaker-tag">with A. Speaker</span>
+					<p class="card-text">Who knows the wonders we'll discuss! Maybe you'll be the speaker...?</p>
+					<div class="location-footer">Burnside, GIC 512 &bull; 10-11 AM</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="about-block">
+			<div class="about-layout">
+				<div class="about-text-content">
+					<h2 class="section-title left">What is the Math Circle?</h2>
+					<p class="paragraph">
+						The focus of seminar is to develop curiosity about several types of math and learn how to explore them from new perspectives.
+                    </p>
+                    <p class="paragraph">Each seminar will contain…</p>
+                    <ul class="main-list">
+                        <li>SNACKS! Cookies/biscuits/something…</li>
+                        <li>DRINKS! Tea, coffee…</li>
+                        <li>One (or two) topics of discussion - that are niche math/physics/computer science/etc. related</li>
+                        <li>A speaker (or two) who will lead thse discussions with activities/PPTs/straight up chitter-chatter</li>
+                        <li>CURIOSITY! DISCOVERY! ACTIVE PARTICIPATION! CONFUSION! and….. MATH!!!!</li>
+                    </ul>
+				</div>
+				<div class="info-sidebar">
+					<div class="info-sticky-note">
+						<h4>The Essentials</h4>
+						<ul>
+							<li><strong>When:</strong> Every other Friday (eventually)</li>
+							<li><strong>Hours:</strong> 10:00 AM – 11:00 AM</li>
+							<li><strong>Who:</strong> Open to ALL McGill students/faculty</li>
+                            <li><strong>Sign Up:</strong> Just show up!</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</Layout>
+
+<style>
+    .main-list {
+    padding-left: 1rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    }
+
+    .inner-list {
+    padding-left: 2.5rem;
+    }
+
+	.container {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.section {
+		padding: 5rem 0;
+	}
+
+	.section-header {
+		margin-bottom: 3.5rem;
+	}
+
+	.section-title {
+		font-family: var(--font-serif);
+		font-size: 2.5rem;
+		font-weight: 700;
+		text-align: center;
+		color: var(--text-dark);
+		letter-spacing: -0.5px;
+	}
+
+	.section-title.left {
+		text-align: left;
+		margin-bottom: 1.5rem;
+	}
+
+	.section-desc, .newsletter-desc {
+		text-align: center;
+		color: var(--text-dark);
+		font-weight: 500;
+		margin-top: 0.5rem;
+		font-size: 1.1rem;
+	}
+
+	.hero {
+		padding: 6rem 2rem;
+		background-color: var(--bg-cream);
+		border-bottom: 2px solid var(--border-ink);
+		text-align: center;
+	}
+
+	.hero-content {
+		max-width: 760px;
+		margin: 0 auto;
+	}
+
+	.badge {
+		display: inline-block;
+		background-color: var(--bg-pure);
+		border: 2px solid var(--border-ink);
+		color: var(--text-dark);
+		padding: 0.4rem 1.1rem;
+		border-radius: 4px;
+		font-size: 0.85rem;
+		font-weight: 700;
+		margin-bottom: 2rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.hero h1 {
+		font-family: var(--font-serif);
+		font-size: 3.5rem;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: 1.5rem;
+		color: var(--text-dark);
+		letter-spacing: -1px;
+	}
+
+	.whimsical-text {
+		color: var(--mcgill-red);
+		font-style: italic;
+		font-weight: 600;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: var(--text-dark);
+		line-height: 1.6;
+		margin-bottom: 2.5rem;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 1.2rem;
+		justify-content: center;
+	}
+
+	.btn {
+		padding: 0.8rem 1.8rem;
+		border-radius: 4px;
+		font-weight: 700;
+		text-decoration: none;
+		font-size: 1rem;
+		border: 2px solid var(--border-ink);
+		transition: all 0.15s ease;
+	}
+
+	.btn.primary {
+		background-color: var(--mcgill-red);
+		color: var(--bg-pure);
+		box-shadow: 4px 4px 0px var(--border-ink);
+	}
+
+	.btn.primary:hover {
+		transform: translate(-1px, -1px);
+		box-shadow: 5px 5px 0px var(--border-ink);
+	}
+
+	.btn.secondary {
+		background-color: var(--bg-pure);
+		color: var(--text-dark);
+		box-shadow: 4px 4px 0px var(--border-ink);
+	}
+
+	.btn.secondary:hover {
+		transform: translate(-1px, -1px);
+		box-shadow: 5px 5px 0px var(--border-ink);
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2.5rem;
+	}
+
+	.card {
+		background-color: var(--bg-pure);
+		border: 2px solid var(--border-ink);
+		border-radius: 6px;
+		padding: 2rem;
+		position: relative;
+		box-shadow: 4px 4px 0px var(--border-ink);
+		transition: all 0.15s ease;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card:hover {
+		transform: translate(-2px, -2px);
+		box-shadow: 6px 6px 0px var(--mcgill-red);
+	}
+
+	.date-tag {
+		background-color: var(--accent-pink);
+		color: var(--dark-red);
+		border: 2px solid var(--mcgill-red);
+		display: inline-block;
+		align-self: flex-start;
+		padding: 0.3rem 0.7rem;
+		font-size: 0.85rem;
+		font-weight: 800;
+		border-radius: 4px;
+		margin-bottom: 1.2rem;
+	}
+
+	.card h3 {
+		font-family: var(--font-serif);
+		font-size: 1.4rem;
+		margin-bottom: 0.3rem;
+		color: var(--text-dark);
+	}
+
+	.speaker-tag {
+		font-size: 0.95rem;
+		color: var(--dark-red);
+		font-weight: 600;
+		font-style: italic;
+		margin-bottom: 1.2rem;
+		display: block;
+	}
+
+	.card-text {
+		color: var(--text-dark);
+		line-height: 1.6;
+		font-size: 0.95rem;
+		flex-grow: 1;
+		margin-bottom: 1.5rem;
+	}
+
+	.location-footer {
+		font-size: 0.85rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		color: var(--text-dark);
+		border-top: 2px dashed var(--border-ink);
+		padding-top: 1rem;
+	}
+
+	.about-block {
+		background-color: var(--bg-pure);
+		border: 2px solid var(--border-ink);
+		border-radius: 8px;
+		padding: 4rem 3rem;
+		margin: 4rem 0;
+	}
+
+	.about-layout {
+		display: grid;
+		grid-template-columns: 1.4fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.paragraph {
+		color: var(--text-dark);
+		line-height: 1.7;
+		margin-bottom: 1.2rem;
+		font-size: 1.05rem;
+	}
+
+	.info-sidebar {
+		display: flex;
+		justify-content: center;
+	}
+
+	.info-sticky-note {
+		background-color: var(--accent-pink);
+		border: 2px dashed var(--mcgill-red);
+		border-radius: 6px;
+		padding: 2rem;
+		width: 100%;
+		transform: rotate(1deg);
+	}
+
+	.info-sticky-note h4 {
+		font-family: var(--font-serif);
+		color: var(--dark-red);
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.info-sticky-note ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+	}
+
+	.info-sticky-note li {
+		font-size: 0.95rem;
+		color: var(--text-dark);
+	}
+
+	.newsletter-block {
+		text-align: center;
+		padding: 5rem 2rem;
+		background-color: var(--accent-pink);
+		border: 2px solid var(--border-ink);
+		border-radius: 8px;
+		margin: 4rem 0 2rem 0;
+	}
+
+	.newsletter-block h2 {
+		font-family: var(--font-serif);
+		font-size: 2.2rem;
+		color: var(--text-dark);
+		margin-bottom: 0.8rem;
+	}
+
+	.newsletter-block p {
+		color: var(--text-dark);
+		max-width: 540px;
+		margin: 0 auto 2rem auto;
+		line-height: 1.6;
+		font-size: 1.05rem;
+	}
+
+	.signup-form {
+		display: flex;
+		max-width: 460px;
+		margin: 0 auto;
+		gap: 0.5rem;
+	}
+
+	.signup-form input {
+		flex: 1;
+		background-color: var(--bg-pure);
+		border: 2px solid var(--border-ink);
+		padding: 0.8rem 1rem;
+		border-radius: 4px;
+		color: var(--text-dark);
+		font-family: inherit;
+		font-weight: 500;
+	}
+
+	.signup-form input:focus {
+		outline: none;
+		border-color: var(--mcgill-red);
+	}
+
+	.signup-form button {
+		background-color: var(--mcgill-red);
+		color: var(--bg-pure);
+		border: 2px solid var(--border-ink);
+		padding: 0.8rem 1.4rem;
+		font-weight: 700;
+		border-radius: 4px;
+		cursor: pointer;
+		box-shadow: 3px 3px 0px var(--border-ink);
+		transition: all 0.1s ease;
+	}
+
+	.signup-form button:hover {
+		transform: translate(-1px, -1px);
+		box-shadow: 4px 4px 0px var(--border-ink);
+	}
+
+	@media (max-width: 768px) {
+		.hero h1 {
+			font-size: 2.6rem;
+		}
+		.about-layout {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+		}
+		.about-block {
+			padding: 2.5rem 1.5rem;
+		}
+		.signup-form {
+			flex-direction: column;
+		}
+		.info-sticky-note {
+			transform: none;
+		}
+	}
+</style>

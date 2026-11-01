@@ -1,0 +1,145 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Resources | McGill Math Seminar">
+	<div class="container page-spacing">
+		<header class="page-header">
+			<h1 class="page-title">Seminar Resources</h1>
+			<p class="page-subtitle">Access files, notes, and documents distributed during our weekly seminar sessions.</p>
+		</header>
+
+		<div class="resource-layout">
+			<div class="resource-block">
+				<h2>Files & Documents</h2>
+				<ul class="resource-list">
+					<li>
+						<div class="res-info">
+							<span class="file-badge">PDF</span>
+							<strong>Placeholder Title</strong>
+							<p>Placeholder Description</p>
+						</div>
+						<a href="#" class="download-link" download>Download PDF</a>
+					</li>
+					<li>
+						<div class="res-info">
+							<span class="file-badge">PDF</span>
+							<strong>Placeholder Title</strong>
+							<p>Placeholder Description</p>
+						</div>
+						<a href="#" class="download-link" download>Download PDF</a>
+					</li>
+					<li>
+						<div class="res-info">
+							<span class="file-badge">PDF</span>
+							<strong>Placeholder Title</strong>
+							<p>Placeholder Description</p>
+						</div>
+						<a href="#" class="download-link" download>Download PDF</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+	.page-spacing {
+		padding: 5rem 0;
+	}
+	.page-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+	.page-title {
+		font-family: var(--font-serif);
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	.page-subtitle {
+		font-size: 1.2rem;
+		color: var(--text-muted);
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.resource-layout {
+		width: 100%;
+	}
+	.resource-block h2 {
+		font-family: var(--font-serif);
+		font-size: 1.8rem;
+		margin-bottom: 1.5rem;
+		border-bottom: 2px solid var(--border-ink);
+		padding-bottom: 0.5rem;
+	}
+	.resource-list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	.resource-list li {
+		background-color: var(--bg-pure);
+		border: 2px solid var(--border-ink);
+		border-radius: 6px;
+		padding: 1.5rem;
+		box-shadow: 4px 4px 0px var(--border-ink);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+	}
+	.file-badge {
+		background-color: var(--accent-pink);
+		color: var(--mcgill-red);
+		border: 1px solid var(--mcgill-red);
+		font-size: 0.75rem;
+		font-weight: 800;
+		padding: 0.2rem 0.5rem;
+		border-radius: 4px;
+		display: inline-block;
+		margin-bottom: 0.5rem;
+	}
+	.res-info strong {
+		display: block;
+		font-size: 1.1rem;
+		margin-bottom: 0.25rem;
+	}
+	.res-info p {
+		font-size: 0.95rem;
+		color: var(--text-muted);
+	}
+	.download-link {
+		background-color: var(--bg-pure);
+		color: var(--text-dark);
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 0.9rem;
+		padding: 0.5rem 1rem;
+		border: 2px solid var(--border-ink);
+		border-radius: 4px;
+		box-shadow: 2px 2px 0px var(--border-ink);
+		white-space: nowrap;
+		transition: all 0.15s ease;
+	}
+	.download-link:hover {
+		transform: translate(-1px, -1px);
+		box-shadow: 3px 3px 0px var(--border-ink);
+	}
+	@media (max-width: 600px) {
+		.resource-list li {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1.2rem;
+		}
+		.download-link {
+			width: 100%;
+			text-align: center;
+		}
+	}
+</style>

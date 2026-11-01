@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="FAQs | McGill Math Seminar">
+	<div class="container page-spacing">
+		<header class="page-header">
+			<h1 class="page-title">Frequently Asked Questions</h1>
+			<p class="page-subtitle">Everything you need to know before showing up to Burnside Hall.</p>
+		</header>
+
+		<div class="faq-stack">
+			<div class="faq-card">
+				<h3>Do I need to be a Math Major to attend?</h3>
+				<p><strong>Answer:</strong> Absolutely not. The seminar is engineered for anyone interested in logical structures. If you can appreciate patterns, you will follow the discussions perfectly.</p>
+			</div>
+
+			<div class="faq-card">
+				<h3>What does "Absolute Confusion" imply?</h3>
+				<p><strong>Answer:</strong> We choose topics that push past simple calculus equations. Getting completely lost during a speaker's talk is a feature of the experience, not a flaw. We break down problems together afterwards.</p>
+			</div>
+
+			<div class="faq-card">
+				<h3>Can I pitch a talk topic myself?</h3>
+				<p><strong>Answer:</strong> Yes, please! We love student speakers. Simply chat with Emily at the end of any session or pull us aside to pitch a sketch proposal.</p>
+			</div>
+
+			<div class="faq-card">
+				<h3>Is there an entry fee or sign-up?</h3>
+				<p><strong>Answer:</strong> No. Registration is entirely drop-in. Just follow the smells of hot tea and cookies to room GIC 512.</p>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+	.page-spacing {
+		padding: 5rem 0;
+	}
+	.page-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+	.page-title {
+		font-family: var(--font-serif);
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	.page-subtitle {
+		font-size: 1.2rem;
+		color: var(--text-muted);
+	}
+	.faq-stack {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.faq-card {
+		background-color: var(--bg-pure);
+		border: 2px solid var(--border-ink);
+		border-radius: 6px;
+		padding: 2rem;
+		box-shadow: 4px 4px 0px var(--border-ink);
+	}
+	.faq-card h3 {
+		font-family: var(--font-serif);
+		font-size: 1.35rem;
+		margin-bottom: 0.8rem;
+		color: var(--mcgill-red);
+	}
+	.faq-card p {
+		line-height: 1.6;
+		font-size: 1rem;
+	}
+</style>

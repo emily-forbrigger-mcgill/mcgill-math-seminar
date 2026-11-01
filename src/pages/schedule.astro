@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Schedule | McGill Math Seminar">
+	<div class="container page-spacing">
+		<header class="page-header">
+			<h1 class="page-title">The Term Timeline</h1>
+			<p class="page-subtitle">Bi-weekly gatherings held on Fridays. Topics are dynamic and update regularly.</p>
+		</header>
+
+		<div class="timeline-box">
+			<!-- Row 1 -->
+			<div class="timeline-row">
+				<div class="time-meta">
+					<span class="row-date">Nov 06</span>
+					<span class="row-hour">10:00 - 11:00 AM</span>
+				</div>
+				<div class="time-details">
+					<h3>Introduction to Math Seminar</h3>
+					<p class="speaker">Speaker: Emily Forbrigger &bull; Burnside Hall GIC 512</p>
+					<p class="desc">Discover what math seminar is all about! Emily will give a sneak peek into speaker formats, followed by a rapid-fire open forum.</p>
+				</div>
+			</div>
+
+			<!-- Row 2 -->
+			<div class="timeline-row tbd">
+				<div class="time-meta">
+					<span class="row-date">Nov 20</span>
+					<span class="row-hour">10:00 - 11:00 AM</span>
+				</div>
+				<div class="time-details">
+					<h3>To Be Decided!</h3>
+					<p class="speaker">Speaker: Open Slot &bull; Burnside Hall GIC 512</p>
+					<p class="desc">Do you have a strange paradox, geometric puzzle, or computational theory you love? Pitch your topic to lead this session!</p>
+				</div>
+			</div>
+
+			<!-- Row 3 -->
+			<div class="timeline-row tbd">
+				<div class="time-meta">
+					<span class="row-date">Dec 04</span>
+					<span class="row-hour">10:00 - 11:00 AM</span>
+				</div>
+				<div class="time-details">
+					<h3>To Be Decided!</h3>
+					<p class="speaker">Speaker: Open Slot &bull; Burnside Hall GIC 512</p>
+					<p class="desc">Final open roundtable meeting before reading week breaks. Bring your favorite computational oddities.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.container {
+		max-width: 850px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+	.page-spacing {
+		padding: 5rem 0;
+	}
+	.page-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+	.page-title {
+		font-family: var(--font-serif);
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	.page-subtitle {
+		font-size: 1.2rem;
+		color: var(--text-muted);
+	}
+	.timeline-box {
+		background-color: var(--bg-pure);
+		border: 2px solid var(--border-ink);
+		border-radius: 8px;
+		box-shadow: 4px 4px 0px var(--border-ink);
+		display: flex;
+		flex-direction: column;
+	}
+	.timeline-row {
+		display: grid;
+		grid-template-columns: 1fr 2.5fr;
+		padding: 2.5rem;
+		border-bottom: 2px dashed #E5E5E5;
+	}
+	.timeline-row:last-child {
+		border-bottom: none;
+	}
+	.time-meta {
+		display: flex;
+		flex-direction: column;
+		gap: 0.3rem;
+	}
+	.row-date {
+		font-family: var(--font-serif);
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: var(--mcgill-red);
+	}
+	.row-hour {
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: var(--text-muted);
+	}
+	.time-details h3 {
+		font-family: var(--font-serif);
+		font-size: 1.4rem;
+		margin-bottom: 0.4rem;
+	}
+	.speaker {
+		font-size: 0.95rem;
+		font-weight: 600;
+		color: var(--text-dark);
+		margin-bottom: 0.8rem;
+	}
+	.desc {
+		line-height: 1.6;
+		color: var(--text-muted);
+	}
+	.timeline-row.tbd {
+		background-color: var(--bg-cream);
+	}
+	@media (max-width: 600px) {
+		.timeline-row {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+			padding: 2rem 1.5rem;
+		}
+	}
+</style>
